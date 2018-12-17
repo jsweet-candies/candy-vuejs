@@ -1,2 +1,4 @@
 # candy-vuejs
-Candy for Vue.js
+A simple candy for using Vue.js.
+
+Note : only the main renderer is mapped.
