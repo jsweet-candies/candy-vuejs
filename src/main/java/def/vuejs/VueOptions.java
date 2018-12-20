@@ -14,4 +14,7 @@ public class VueOptions {
 
 	@Optional
 	public Runnable updated;
+
+	@Optional
+	public Object watch;
 }
