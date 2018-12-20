@@ -11,6 +11,8 @@ interface VueOptions {
     methods? : any;
 
     updated? : () => void;
+
+    watch? : any;
 }
 
 
