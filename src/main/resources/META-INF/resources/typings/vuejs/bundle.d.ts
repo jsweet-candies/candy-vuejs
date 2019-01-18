@@ -13,6 +13,8 @@ declare class Vue {
 interface Component<T> {
     data? : () => T;
 
+    methods? : any;
+
     template? : string;
 }
 

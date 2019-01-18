@@ -12,5 +12,8 @@ public class Component<T> {
 	public Supplier<T> data;
 
 	@Optional
+	public Object methods;
+
+	@Optional
 	public String template;
 }
