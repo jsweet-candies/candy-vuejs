@@ -10,4 +10,6 @@ public class Vue extends def.js.Object {
 	 * @param component
 	 */
 	public static native <T> void component(String name, Component<?> component);
+
+	public VueRootJS $root;
 }
