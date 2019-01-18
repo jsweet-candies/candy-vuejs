@@ -6,6 +6,9 @@ import jsweet.lang.Optional;
 @Interface
 public class VueOptions {
 
+	/**
+	 * css selector
+	 */
 	public String el;
 	public Object data;
 
