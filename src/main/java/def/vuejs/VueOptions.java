@@ -26,8 +26,20 @@ public class VueOptions {
 	@Optional
 	public Object watch;
 
+	// DOM, see https://vuejs.org/v2/api/#Options-DOM
+
 	@Optional
 	public String el;
+
+	@Optional
+	public String template;
+
+	@Optional
+	public Object render;
+
+	// New in Vue 2.2.0+
+	@Optional
+	public Object renderError;
 
 	// Lifecycle Hooks, see https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
 

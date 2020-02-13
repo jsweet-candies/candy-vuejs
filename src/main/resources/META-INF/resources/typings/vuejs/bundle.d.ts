@@ -14,6 +14,12 @@ interface VueOptions {
 
     el? : string;
 
+    template? : string;
+
+    render? : any;
+
+    renderError? : any;
+
     beforeCreate? : () => void;
 
     created? : () => void;
