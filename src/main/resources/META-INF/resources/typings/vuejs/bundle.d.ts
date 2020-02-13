@@ -31,7 +31,7 @@ interface VueOptions {
     errorCaptured? : () => void;
 }
 
-declare class Vue<T> {
+declare class Vue {
     public constructor(options : VueOptions);
 }
 
