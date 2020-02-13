@@ -55,6 +55,14 @@ interface VueOptions {
 
 declare class Vue {
     public constructor(options : VueOptions);
+
+    public static extend(options : VueOptions) : Vue;
+
+    public static extend(vue : Vue) : Vue;
+
+    public static component(name : string, options : VueOptions) : Vue;
+
+    public static component(name : string, vue : Vue) : Vue;
 }
 
 
