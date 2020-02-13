@@ -1,4 +1,4 @@
 # Release notes
 
-## 3.0.0
+## 2.5.21-6
 - Remove generic parameter of the Vue class.
