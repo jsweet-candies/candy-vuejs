@@ -76,4 +76,15 @@ public class VueOptions {
 	// New in Vue 2.5.0+
 	@Optional
 	public Runnable errorCaptured;
+
+	// Assets, see https://vuejs.org/v2/api/#Options-Assets
+
+	@Optional
+	public Object directives;
+
+	@Optional
+	public Object filters;
+
+	@Optional
+	public Object components;
 }

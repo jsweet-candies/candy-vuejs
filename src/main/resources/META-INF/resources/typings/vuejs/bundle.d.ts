@@ -41,6 +41,12 @@ interface VueOptions {
     destroyed? : () => void;
 
     errorCaptured? : () => void;
+
+    directives? : any;
+
+    filters? : any;
+
+    components? : any;
 }
 
 declare class Vue {
