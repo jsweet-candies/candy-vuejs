@@ -1,12 +1,24 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
 interface VueOptions {
-    el : string;
+    data? : any;
 
-    data : any;
+    props? : any;
+
+    propsData? : any;
+
+    computed? : any;
 
     methods? : any;
 
     watch? : any;
+
+    el? : string;
+
+    template? : string;
+
+    render? : any;
+
+    renderError? : any;
 
     beforeCreate? : () => void;
 
@@ -29,6 +41,16 @@ interface VueOptions {
     destroyed? : () => void;
 
     errorCaptured? : () => void;
+
+    directives? : any;
+
+    filters? : any;
+
+    components? : any;
+
+    parent? : Vue;
+
+    mixins? : Array<any>;
 }
 
 declare class Vue {
