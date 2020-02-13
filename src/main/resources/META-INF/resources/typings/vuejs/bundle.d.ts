@@ -47,6 +47,10 @@ interface VueOptions {
     filters? : any;
 
     components? : any;
+
+    parent? : Vue;
+
+    mixins? : Array<any>;
 }
 
 declare class Vue {

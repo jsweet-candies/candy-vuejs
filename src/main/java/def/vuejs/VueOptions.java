@@ -1,5 +1,6 @@
 package def.vuejs;
 
+import def.js.Array;
 import jsweet.lang.Interface;
 import jsweet.lang.Optional;
 
@@ -87,4 +88,12 @@ public class VueOptions {
 
 	@Optional
 	public Object components;
+
+	// Composition, see https://vuejs.org/v2/api/#Options-Composition
+
+	@Optional
+	public Vue parent;
+
+	@Optional
+	public Array<Object> mixins;
 }
