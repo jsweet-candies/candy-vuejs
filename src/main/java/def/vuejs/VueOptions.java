@@ -6,14 +6,28 @@ import jsweet.lang.Optional;
 @Interface
 public class VueOptions {
 
-	public String el;
+	// Data, see https://vuejs.org/v2/api/#Options-Data
+
+	@Optional
 	public Object data;
+
+	@Optional
+	public Object props;
+
+	@Optional
+	public Object propsData;
+
+	@Optional
+	public Object computed;
 
 	@Optional
 	public Object methods;
 
 	@Optional
 	public Object watch;
+
+	@Optional
+	public String el;
 
 	// Lifecycle Hooks, see https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
 

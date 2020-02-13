@@ -1,12 +1,18 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
 interface VueOptions {
-    el : string;
+    data? : any;
 
-    data : any;
+    props? : any;
+
+    propsData? : any;
+
+    computed? : any;
 
     methods? : any;
 
     watch? : any;
+
+    el? : string;
 
     beforeCreate? : () => void;
 
