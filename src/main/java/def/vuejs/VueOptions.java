@@ -1,8 +1,12 @@
 package def.vuejs;
 
+import java.util.Map;
+import java.util.function.Supplier;
+
 import def.js.Array;
 import jsweet.lang.Interface;
 import jsweet.lang.Optional;
+import jsweet.util.union.Union;
 
 @Interface
 public class VueOptions {
@@ -10,10 +14,10 @@ public class VueOptions {
 	// Data, see https://vuejs.org/v2/api/#Options-Data
 
 	@Optional
-	public Object data;
+	public Union<Object, Supplier<Object>> data;
 
 	@Optional
-	public Object props;
+	public Union<String[], Map<String, Prop>> props;
 
 	@Optional
 	public Object propsData;
