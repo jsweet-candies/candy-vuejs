@@ -1,8 +1,8 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
 interface VueOptions {
-    data? : any;
+    data? : ((any)|(() => any));
 
-    props? : any;
+    props? : ((string[])|(any));
 
     propsData? : any;
 
@@ -63,6 +63,15 @@ declare class Vue {
     public static component(name : string, options : VueOptions) : Vue;
 
     public static component(name : string, vue : Vue) : Vue;
+}
+
+interface Prop {
+    required : boolean;
+
+    /**
+     * One of String, Number, Boolean, Array, Object, Date, Function, Symbol
+     */
+    type : string;
 }
 
 
