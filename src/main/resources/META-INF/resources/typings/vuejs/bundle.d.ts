@@ -1,4 +1,24 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
+declare class Vue {
+    public constructor(options : VueOptions);
+
+    public static extend(options : VueOptions) : Vue;
+
+    public static extend(vue : Vue) : Vue;
+
+    public static component(name : string, options : VueOptions) : Vue;
+
+    public static component(name : string, vue : Vue) : Vue;
+
+    public static use(object : any);
+
+    public static use(installFunctiop : () => void);
+}
+
+interface Prop {
+    required : boolean;
+}
+
 interface VueOptions {
     data? : ((any)|(() => any));
 
@@ -51,27 +71,6 @@ interface VueOptions {
     parent? : Vue;
 
     mixins? : Array<any>;
-}
-
-declare class Vue {
-    public constructor(options : VueOptions);
-
-    public static extend(options : VueOptions) : Vue;
-
-    public static extend(vue : Vue) : Vue;
-
-    public static component(name : string, options : VueOptions) : Vue;
-
-    public static component(name : string, vue : Vue) : Vue;
-}
-
-interface Prop {
-    required : boolean;
-
-    /**
-     * One of String, Number, Boolean, Array, Object, Date, Function, Symbol
-     */
-    type : string;
 }
 
 
