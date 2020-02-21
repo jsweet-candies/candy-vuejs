@@ -12,6 +12,10 @@ public class Vue extends def.js.Object {
 	public static native Vue extend(Vue vue);
 
 	public static native Vue component(String name, VueOptions options);
-	
+
 	public static native Vue component(String name, Vue vue);
+
+	public static native void use(Object object);
+
+	public static native void use(Runnable installFunctiop);
 }
