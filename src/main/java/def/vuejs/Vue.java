@@ -1,5 +1,7 @@
 package def.vuejs;
 
+import java.util.function.Consumer;
+
 public class Vue extends def.js.Object {
 
 	public Vue(VueOptions options) {
@@ -17,5 +19,11 @@ public class Vue extends def.js.Object {
 
 	public static native void use(Object object);
 
-	public static native void use(Runnable installFunctiop);
+	public static native void use(Runnable installFunction);
+
+	public native void $on(String event, Consumer<Object> callback);
+
+	public native void $emit(String event, Object eventParam);
+
+	public native void $emit(String event);
 }

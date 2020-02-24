@@ -12,7 +12,13 @@ declare class Vue {
 
     public static use(object : any);
 
-    public static use(installFunctiop : () => void);
+    public static use(installFunction : () => void);
+
+    public $on(event : string, callback : (p1: any) => void);
+
+    public $emit(event : string, eventParam : any);
+
+    public $emit(event : string);
 }
 
 interface Prop {
