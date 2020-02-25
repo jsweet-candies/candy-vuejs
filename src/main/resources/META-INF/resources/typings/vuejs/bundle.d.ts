@@ -1,14 +1,16 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
-declare class Vue {
+declare class Vue<DataClass> {
+    public $data : DataClass;
+
     public constructor(options : VueOptions);
 
-    public static extend(options : VueOptions) : Vue;
+    public static extend<T>(options : VueOptions) : Vue<T>;
 
-    public static extend(vue : Vue) : Vue;
+    public static extend<T, TS>(vue : Vue<TS>) : Vue<T>;
 
-    public static component(name : string, options : VueOptions) : Vue;
+    public static component<T>(name : string, options : VueOptions) : Vue<T>;
 
-    public static component(name : string, vue : Vue) : Vue;
+    public static component<T, TS>(name : string, vue : Vue<TS>) : Vue<T>;
 
     public static use(object : any);
 
@@ -74,7 +76,7 @@ interface VueOptions {
 
     components? : any;
 
-    parent? : Vue;
+    parent? : Vue<any>;
 
     mixins? : Array<any>;
 }
