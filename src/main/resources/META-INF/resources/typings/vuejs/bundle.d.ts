@@ -2,6 +2,8 @@
 declare class Vue<DataClass> {
     public $data : DataClass;
 
+    public $el : HTMLElement;
+
     public $props : any;
 
     public constructor(options : VueOptions);

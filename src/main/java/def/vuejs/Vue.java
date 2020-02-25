@@ -3,9 +3,13 @@ package def.vuejs;
 import java.util.Map;
 import java.util.function.Consumer;
 
+import def.dom.HTMLElement;
+
 public class Vue<DataClass> extends def.js.Object {
 
 	public DataClass $data;
+	public HTMLElement $el;
+
 	public Map<String, Object> $props;
 
 	public Vue(VueOptions options) {
