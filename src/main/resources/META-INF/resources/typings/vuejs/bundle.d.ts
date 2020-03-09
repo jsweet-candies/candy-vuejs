@@ -25,6 +25,8 @@ declare class Vue<DataClass> {
     public $emit(event : string, eventParam : any);
 
     public $emit(event : string);
+
+    public static set(o : any, property : string, value : any);
 }
 
 interface Prop {
