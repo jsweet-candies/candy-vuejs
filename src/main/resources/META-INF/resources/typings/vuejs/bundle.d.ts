@@ -1,38 +1,4 @@
 /* Generated from Java with JSweet 2.0.0-SNAPSHOT - http://www.jsweet.org */
-declare class Vue<DataClass> {
-    public $data : DataClass;
-
-    public $el : HTMLElement;
-
-    public $props : any;
-
-    public constructor(options : VueOptions);
-
-    public static extend<T>(options : VueOptions) : Vue<T>;
-
-    public static extend<T, TS>(vue : Vue<TS>) : Vue<T>;
-
-    public static component<T>(name : string, options : VueOptions) : Vue<T>;
-
-    public static component<T, TS>(name : string, vue : Vue<TS>) : Vue<T>;
-
-    public static use(object : any);
-
-    public static use(installFunction : () => void);
-
-    public $on(event : string, callback : (p1: any) => void);
-
-    public $emit(event : string, eventParam : any);
-
-    public $emit(event : string);
-
-    public static set(o : any, property : string, value : any);
-}
-
-interface Prop {
-    required : boolean;
-}
-
 interface VueOptions {
     data? : ((any)|(() => any));
 
@@ -85,6 +51,40 @@ interface VueOptions {
     parent? : Vue<any>;
 
     mixins? : Array<any>;
+}
+
+interface Prop {
+    required : boolean;
+}
+
+declare class Vue<DataClass> {
+    public $data : DataClass;
+
+    public $el : HTMLElement;
+
+    public $props : any;
+
+    public constructor(options : VueOptions);
+
+    public static extend<T>(options : VueOptions) : Vue<T>;
+
+    public static extend<T, TS>(vue : Vue<TS>) : Vue<T>;
+
+    public static component<T>(name : string, options : VueOptions) : Vue<T>;
+
+    public static component<T, TS>(name : string, vue : Vue<TS>) : Vue<T>;
+
+    public static use(object : any);
+
+    public static use(installFunction : () => void);
+
+    public $on(event : string, callback : (p1: any) => void);
+
+    public $emit(event : string, eventParam : any);
+
+    public $emit(event : string);
+
+    public static set(o : any, property : string, value : any);
 }
 
 
