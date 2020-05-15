@@ -53,10 +53,6 @@ interface VueOptions {
     mixins? : Array<any>;
 }
 
-interface Prop {
-    required : boolean;
-}
-
 declare class Vue<DataClass> {
     public $data : DataClass;
 
@@ -85,6 +81,12 @@ declare class Vue<DataClass> {
     public $emit(event : string);
 
     public static set(o : any, property : string, value : any);
+
+    public static filter(id : string, __function : Function) : string;
+}
+
+interface Prop {
+    required : boolean;
 }
 
 

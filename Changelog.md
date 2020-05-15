@@ -1,5 +1,8 @@
 # Release notes
 
+## 2.5.21-11
+- Add Vue.filter
+
 ## 2.5.21-9
 - Add Vue.set
 

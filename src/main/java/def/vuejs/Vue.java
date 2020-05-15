@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 import def.dom.HTMLElement;
+import def.js.Function;
 
 public class Vue<DataClass> extends def.js.Object {
 
@@ -36,4 +37,6 @@ public class Vue<DataClass> extends def.js.Object {
 	public native void $emit(String event);
 
 	public static native void set(Object o, String property, Object value);
+
+	public static native String filter(String id, Function function);
 }
