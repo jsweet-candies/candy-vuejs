@@ -1,5 +1,8 @@
 # Release notes
 
+## 2.5.21-12
+- Add Vue.$nextTick
+
 ## 2.5.21-11
 - Add Vue.filter
 

@@ -80,6 +80,8 @@ declare class Vue<DataClass> {
 
     public $emit(event : string);
 
+    public $nextTick(__function : () => void);
+
     public static set(o : any, property : string, value : any);
 
     public static filter(id : string, __function : Function) : string;

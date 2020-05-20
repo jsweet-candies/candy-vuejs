@@ -10,7 +10,6 @@ public class Vue<DataClass> extends def.js.Object {
 
 	public DataClass $data;
 	public HTMLElement $el;
-
 	public Map<String, Object> $props;
 
 	public Vue(VueOptions options) {
@@ -35,6 +34,8 @@ public class Vue<DataClass> extends def.js.Object {
 	public native void $emit(String event, Object eventParam);
 
 	public native void $emit(String event);
+	
+	public native void $nextTick(Runnable function);
 
 	public static native void set(Object o, String property, Object value);
 
