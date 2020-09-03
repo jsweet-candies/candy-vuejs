@@ -3,6 +3,7 @@ package def.vuejs;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import def.dom.Element;
 import def.js.Array;
 import jsweet.lang.Interface;
 import jsweet.lang.Optional;
@@ -34,7 +35,7 @@ public class VueOptions {
 	// DOM, see https://vuejs.org/v2/api/#Options-DOM
 
 	@Optional
-	public String el;
+	public Union<String, Element> el;
 
 	@Optional
 	public String template;
