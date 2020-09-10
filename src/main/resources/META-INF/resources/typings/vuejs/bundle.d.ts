@@ -80,9 +80,7 @@ declare class Vue<DataClass> {
 
     public $on(event : string, callback : (p1: any) => void);
 
-    public $emit(event : string, eventParam : any);
-
-    public $emit(event : string);
+    public $emit(event : string, ...eventParams : any[]);
 
     public $nextTick(__function : () => void);
 

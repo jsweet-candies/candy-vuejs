@@ -31,10 +31,8 @@ public class Vue<DataClass> extends def.js.Object {
 
 	public native void $on(String event, Consumer<Object> callback);
 
-	public native void $emit(String event, Object eventParam);
+	public native void $emit(String event, Object... eventParams);
 
-	public native void $emit(String event);
-	
 	public native void $nextTick(Runnable function);
 
 	public static native void set(Object o, String property, Object value);
